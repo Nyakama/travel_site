@@ -1,0 +1,9 @@
+{
+  "name": "travel_site",
+  "version": "1.0.0",
+  "description": "A mobile-first website using a variety of technologies.",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
+  }
+}
