@@ -1,0 +1,33 @@
+.section-title{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+
+    strong{
+        font-weight: 600;
+    }
+
+    @media(--small-viewport){
+        font-size: 2.55rem;
+    }
+
+    @media(--medium-viewport){
+        font-size: 3.75rem;
+    }
+}
+
+.section-title__icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.6rem;
+
+
+    @media(--small-viewport){
+        margin-right: 0.5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    
+}
