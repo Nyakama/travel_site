@@ -2,11 +2,16 @@
 
     
 }
+
+.row--t-padding{
+    padding-top: 80px;
+}
+
 /* ______________________________________________Gutters________________________________________________ */
 
 @media(--large-viewport){
     .row--gutters {
-        padding-right: -65px;
+        margin-right: -65px;
     } 
 
     .row--gutters > div {
@@ -14,17 +19,26 @@
     }
 
     .row--gutters-large{
-        padding-right: -100px;
+        margin-right: -100px;
     }
 
     .row--gutters-large > div {
         padding-right: 100px;
+    }
+
+    .row--gutters-small{
+        margin-right: -45px;
+
+    }
+
+    .row--gutters-small > div {
+        padding-right: 45px;
     }
 }
 
 @media(--medium-viewport){
     .row--gutters {
-        padding-right: -65px;
+        margin-right: -65px;
     } 
 
     .row--gutters > div {
@@ -32,18 +46,27 @@
     }
 
     .row--gutters-large{
-        padding-right: -100px;
+        margin-right: -100px;
     }
 
     .row--gutters-large > div {
         padding-right: 100px;
+    }
+
+    .row--gutters-small{
+        margin-right: -45px;
+
+    }
+
+    .row--gutters-small > div {
+        padding-right: 45px;
     }
 
 }
 
 @media(--small-viewport){
     .row--gutters {
-        padding-right: -65px;
+        margin-right: -65px;
     } 
 
     .row--gutters > div {
@@ -51,11 +74,20 @@
     }
 
     .row--gutters-large{
-        padding-right: -100px;
+        margin-right: -100px;
     }
 
     .row--gutters-large > div {
         padding-right: 100px;
+    }
+
+    .row--gutters-small{
+        margin-right: -45px;
+
+    }
+
+    .row--gutters-small > div {
+        padding-right: 45px;
     }
 }
 
@@ -108,11 +140,67 @@
     }
 }
 
+@media(--large-viewport) {
+
+    .row__b-margin-until-large{
+        margin-bottom: 0;
+    }
+
+    .row__large-4--larger{
+        width: 37%;
+    }
+
+    .row__large-4{
+        float: left;
+        width: 33.33%;
+    }
+
+    .row__large-6{
+        float: left;
+        width: 50%;
+    }
+    
+    .row__large-8{
+        float: left;
+        width: 66.66%;
+    }
+
+    .row__large-8--smaller{
+        width: 63%;
+
+    }
+}
+
 .row::after{
     content: "";
     clear: both;
     display: table;
 }
 
+/* Beginn Equal Rights Rules */
+
+.row--equal-height-at-meduim{
+
+    @media(--medium-viewport){
+        display: flex;
+    }
+
+    & > div {
+        float: none;
+        display: flex;
+    }
+}
+
+.row--equal-height-at-large{
+
+    @media(--large-viewport){
+        display: flex;
+    }
+
+    & > div {
+        float: none;
+        display: flex;
+    }
+}
 
 

@@ -24,10 +24,17 @@
 
 
     @media(--small-viewport){
+        position: relative;
+        top:8px;
         margin-right: 0.5rem;
         margin-left: 0;
         margin-bottom: 0;
         display: inline-block;
     }
     
+}
+
+.section-title--blue{
+    color: #2f5572;
+
 }
