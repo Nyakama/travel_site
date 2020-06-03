@@ -8,12 +8,14 @@
     display: block;
 }
 .large-hero__text-content {
+    padding-top: 20px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-25%);
     left: 0;
     width: 100%;
     text-align: center;
+
 }
 .large-hero__title {
     font-weight: 300;
