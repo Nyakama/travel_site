@@ -7,7 +7,12 @@
     
 
     @media(--medium-viewport){
+        position: fixed;
         background-color: rgba(#2f5572, 0.3);
+
+        &--dark{
+            background-color: rgba(23, 51, 72, 0.85);
+        }
     }
 }
 
@@ -30,11 +35,16 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(0.8);
+    transition: transform 0.3s ease-out;
     transform-origin: 50% 0;
 
     @media(--medium-viewport){
         left: auto;
         transform: translateX(0);
+
+        .site-header--dark & {
+            transform: scale(0.57);
+        }
     }
 }
 
