@@ -1,7 +1,4 @@
-.row{
 
-    
-}
 
 .row--t-padding{
     padding-top: 80px;
@@ -179,28 +176,33 @@
 
 /* Beginn Equal Rights Rules */
 
-.row--equal-height-at-meduim{
+.row{
 
-    @media(--medium-viewport){
-        display: flex;
+    &--equal-height-at-meduim{
+
+        @media(--medium-viewport){
+            display: flex;
+        }
+    
+        & > div {
+            float: none;
+            display: flex;
+        }
     }
-
-    & > div {
-        float: none;
-        display: flex;
+    
+    &--equal-height-at-large{
+    
+        @media(--large-viewport){
+            display: flex;
+        }
+    
+        & > div {
+            float: none;
+            display: flex;
+        }
     }
 }
 
-.row--equal-height-at-large{
 
-    @media(--large-viewport){
-        display: flex;
-    }
-
-    & > div {
-        float: none;
-        display: flex;
-    }
-}
 
 
